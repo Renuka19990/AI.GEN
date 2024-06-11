@@ -47,7 +47,7 @@ Check out the [live demo](#) of the AI.Gen landing page.
 To set up the project on your local machine:
 
 ```bash
-git clone https://github.com/Sonali020200/SonaliBurman-FrontendDeveloper.git
+git clone https://github.com/Renuka19990/AI.GEN
 cd AI.Gen
 npm install
 npm run dev
