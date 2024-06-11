@@ -1,0 +1,76 @@
+
+
+.avatar-section {
+
+  padding: 10px;
+  margin: 20px;
+}
+
+
+.animated-paragraph {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.5;  
+  transform: scale(0.95);
+}
+
+.text-active {
+  opacity: 1;  
+  transform: scale(1.05);
+  color: #80dc97; 
+}
+
+.text-inactive {
+  opacity: 0.5; 
+  transform: scale(0.95); 
+}
+.animated-paragraph {
+  transition: transform 0.3s ease-out, color 0.3s ease-out;
+  color: #4b4848;
+  transform: translateY(0); 
+}
+
+.text-active {
+  color: #cde478; 
+  transform: scale(1.1); 
+  font-weight: bold; 
+}
+
+.text-inactive {
+  opacity: 0.6;
+}
+
+
+.text-inactive {
+  color: #64748b; 
+}
+
+.avatar-section img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.avatar-section img:hover {
+  transform: scale(1.05);
+}
+.animated-paragraph {
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  cursor: pointer; /* Indicates that the element is interactive */
+}
+
+
+
+h1 {
+  animation: fadeInDown 1s ease-out forwards;
+  opacity: 0; /* Start invisible */
+  transform: translateY(-20px); /* Start slightly above */
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,95 @@
+/* Base styles */
+.hero2 {
+  margin: auto;
+  margin-top: 150px;
+  width: auto;
+  max-width: 1568px;
+  height: auto;
+  padding: 0 177px;
+}
+
+.hero2-first {
+  background-image: url("../assets/hero2.png");
+  background-size: cover;
+  margin: auto;
+  height: 556px;
+  width: 100%; /* Changed to percentage for responsiveness */
+}
+
+.hero2-first > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero2-first > div > h2 {
+  font-family: Outfit;
+  font-size: 4vw; /* Changed to viewport width for responsiveness */
+  font-weight: 500;
+  line-height: 1.3;
+  text-align: center;
+  color: #fff;
+  max-width: 90%; /* Adjusted for responsiveness */
+}
+
+.hero2-first > div > h2 > span {
+  background: linear-gradient(90deg, #facc69 0%, #ff91a5 100%);
+  background-clip: text;
+  color: transparent;
+}
+
+/* Keyframes */
+@keyframes continuous-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200px;
+  }
+  100% {
+    background-position: 200px;
+  }
+}
+
+/* Animation */
+.text-animate-in {
+  animation: continuous-animation 3s linear infinite;
+}
+
+.text-animate-in:hover {
+  animation: shimmer 1s linear infinite, hover-animation 1s linear infinite;
+}
+
+@keyframes hover-animation {
+  0% {
+    color: #000; /* Original text color */
+  }
+  50% {
+    color: #ff0000; /* Change text color on hover */
+  }
+  100% {
+    color: #000; /* Back to original text color */
+  }
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .hero2 {
+    padding: 0 20px; /* Adjust padding for smaller screens */
+  }
+  
+  .hero2-first > div > h2 {
+    font-size: 5vw; /* Adjust font size for smaller screens */
+  }
+}

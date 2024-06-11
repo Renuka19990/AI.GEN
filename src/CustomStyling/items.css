@@ -1,0 +1,65 @@
+.img-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    width: 28%; /* Adjust based on layout needs */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+    animation: pulse 2s ease-in-out infinite alternate; /* Continuous pulse animation */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+.img-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.4s ease-in-out; /* Smooth transform on hover */
+}
+
+.img-container::before {
+    content: '';
+    position: absolute;
+    top: -20px; /* Extends beyond the image area */
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    z-index: -1; /* Ensures it stays behind the image */
+    border-radius: 16px;
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(to right, rgba(255, 0, 0, 0.7), rgba(0, 255, 0, 0.7), rgba(0, 0, 255, 0.7)) border-box;
+    box-sizing: border-box;
+    animation: rotate-border 8s linear infinite alternate, shimmer 2s infinite linear; /* Alternate rotation and shimmer effect */
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.6),
+                0 0 25px rgba(0, 255, 0, 0.6),
+                0 0 30px rgba(0, 0, 255, 0.6); /* Increased glowing effect */
+}
+
+@keyframes rotate-border {
+    0% {
+        transform: rotate(0deg) scale(0.9); /* Initial scale down */
+    }
+    100% {
+        transform: rotate(360deg) scale(1.1); /* Slight scale up during rotation */
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0; /* Start off-screen */
+    }
+    100% {
+        background-position: 200% 0; /* Move off-screen */
+    }
+}
+
+.img-container:hover img {
+    transform: scale(1.05); /* Slight scale up on hover */
+}

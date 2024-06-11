@@ -1,0 +1,46 @@
+.token-list{
+    padding: 10px;
+}
+@media (max-width:450px) {
+    .token-list{
+font-size: 10px;
+font-weight: 600px;
+height: 100px;
+line-height: 10px;
+text-align: center;
+
+        padding: 0px;
+    }
+}
+
+.text-center {
+    text-align: center;
+  }
+  
+
+  .text-shadow {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  }
+  
+
+  .img-shadow {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .img-shadow:hover {
+    transform: scale(1.05);
+  }
+  
+
+  .grid {
+    display: grid;
+  }
+  
+
+  .text-gradient {
+    background: linear-gradient(to right, violet-500, fuchsia-500);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
