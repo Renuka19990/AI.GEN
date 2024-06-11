@@ -30,7 +30,7 @@ export const Header = () => {
   </button>
 </header>
 
-<aside className="hidden md:flex absolute md:relative top-[-30px] right-[-90px] gap-12 mt-32  mr-32">
+<aside className="hidden md:flex absolute md:relative top-[-30px] right-[-90px] gap-12 mt-32">
   <div className="flex flex-col gap-10">
     <img
       src={elonMusk}
