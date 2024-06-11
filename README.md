@@ -60,7 +60,7 @@ Responsiveness: The application is fully responsive, ensuring an optimal user ex
 Getting Started
 To get started with the project, clone the repository and install the necessary dependencies:
 
-git clone https://github.com/Sonali020200/SonaliBurman-FrontendDeveloper.git
+git clone https:https://github.com/Renuka19990/AI.GEN
 cd AI.Gen
 npm install
 To run the application locally:
