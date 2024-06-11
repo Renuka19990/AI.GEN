@@ -1,57 +1,92 @@
-# AI.Gen Landing Page
+import elonMusk from '../../src/assets/elonMusk.png';
+import billGates from '../../src/assets/billGates.png';
+import timCook from '../../src/assets/timCook.png';
+import trump from '../../src/assets/trump.png';
+import markZukarberg from '../../src/assets/mark zukarberg.png';
+import vitalikBitcoin from '../../src/assets/vitalik bitcoin.png';
+import biden from '../../src/assets/biden.png';
+import albertEintein from '../../src/assets/albert einstein.png';
+import barakObama from '../../src/assets/obama.png';
+import '../CustomStyling/navbar.css';
+import { Navbar } from './Navbar';
 
-Welcome to the repository of AI.Gen's landing page! This project is a meticulous translation from a Figma design to a fully functional web application, designed to showcase the capabilities and features of the AI.Gen platform in a visually appealing layout.
+export const Header = () => {
+  return (
+    <div className="mx-auto w-full relative overflow-hidden header">
+      <Navbar />
+      <div className="md:flex p-10 mt-20">
+      <header className="md:w-[50%] md:ml-40 mt-20">
+  <button className="btn0 border px-2 py-1 text-sm rounded-lg bg-slate-900 border-slate-400 blink-text">
+    🎉 New in AI.GEN: Real Time Interaction
+  </button>
+  <h1 className="btn-h1 text-5xl mt-10 focus-in">
+    IOTA polygon serum ipsum WAX terraUSD gala THETA.
+  </h1>
+  <p className="btn-p text-md mt-8">
+    Chiliz serum TRON dash aave cardano crypto celo. Golem ankr bancor horizen ethereum quant bitcoin.
+  </p>
+  <button className="bg-gradient-to-r from-indigo-500 to-pink-500 rounded-md py-4 px-8 border-0 mt-9 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
+    Get Started
+  </button>
+</header>
 
-## 🖥 Preview
+<aside className="hidden md:flex absolute md:relative top-[-30px] right-[-90px] gap-12 mt-32">
+  <div className="flex flex-col gap-10">
+    <img
+      src={elonMusk}
+      alt="elonMusk"
+      className="w-44 h-44 object-cover rounded-xl animate-continuous-animation animate-hover-animation"
+    />
+    <img
+      src={billGates}
+      alt="billGates"
+      className="w-44 h-44 object-cover rounded-xl animate-continuous-animation animate-hover-animation"
+    />
+    <img
+      src={timCook}
+      alt="timCook"
+      className="w-44 h-44 object-cover rounded-xl animate-continuous-animation animate-hover-animation"
+    />
+  </div>
+  <div className="relative flex flex-col gap-10">
+    <img
+      src={trump}
+      alt="trump"
+      className="w-44 h-44 object-cover rounded-xl animate-continuous-animation animate-hover-animation"
+    />
+    <img
+      src={markZukarberg}
+      alt="markZukarberg"
+      className="w-44 h-44 object-cover rounded-xl animate-continuous-animation animate-hover-animation"
+    />
+    <img
+      src={vitalikBitcoin}
+      alt="vitalikBitcoin"
+      className="w-44 h-44 object-cover rounded-xl animate-continuous-animation animate-hover-animation"
+    />
+  </div>
+  <div className="flex flex-col gap-10">
+    <img
+      src={biden}
+      alt="biden"
+      className="w-44 h-44 object-cover rounded-xl animate-continuous-animation animate-hover-animation"
+    />
+    <img
+      src={albertEintein}
+      alt="albertEintein"
+      className="w-44 h-44 object-cover rounded-xl animate-continuous-animation animate-hover-animation"
+    />
+    <img
+      src={barakObama}
+      alt="barakObama"
+      className="w-44 h-44 object-cover rounded-xl animate-continuous-animation animate-hover-animation"
+    />
+  </div>
+</aside>
 
-### Desktop View
-![Desktop Preview](Preview_Image_1)
-
-### Mobile View
-![Mobile Preview](preview2.webm)
-
-### 🚀 [Live Demo](#)
-Check out the [live demo](#) of the AI.Gen landing page.
-
-## 📖 Sections
-
-- **Navbar**: Easy access to different sections of the landing page.
-- **Hero Section**: Captivates visitors with an introductory display.
-- **Introduction Section**: Offers a concise overview of what AI.Gen is all about.
-- **How It Works**: Detailed insight into the operational mechanics of the platform.
-- **Keywords Carousel**: A dynamic carousel highlighting key terms associated with AI.Gen.
-- **Tokenomics**: Explanation of the platform’s economic model.
-- **Roadmap**: Outlines the development milestones and future plans of AI.Gen.
-- **Footer**: Contains additional links and information for users.
-
-## 🌟 Features
-
-- **Accurate Implementation**: The design from Figma has been precisely converted into this web application.
-- **Visual Integrity**: Maintains consistent aesthetics throughout the application.
-- **Performance Optimization**: Ensures animations and transitions perform smoothly across various devices and browsers.
-- **User-Friendly Experience**: Provides an intuitive experience with interactive elements and straightforward navigation.
-
-## ⚙ Technology Stack
-
-- **React**: Utilized for building interactive user interfaces, enhancing code quality, and maintainability.
-- **Tailwind CSS**: Employed for rapid and consistent styling across the application.
-
-## ✨ Enhancements
-
-- **Scroll Animations & Transitions**: Smooth animations and transitions enhance user interaction.
-- **Card Animations**: Dynamic animations make interactive elements more engaging.
-- **Responsiveness**: Fully responsive design for an optimal experience across various devices and screen sizes.
-
-## 🛠 Getting Started
-
-To set up the project on your local machine:
-
-```bash
-git clone https://github.com/Renuka19990/AI.GEN
-cd AI.Gen
-npm install
-npm run dev
 
 
-🤝 Contribution
-We welcome contributions! If you have suggestions or improvements, please fork the repository and submit a pull request, or open an issue to discuss the changes.
+      </div>
+    </div>
+  );
+};
