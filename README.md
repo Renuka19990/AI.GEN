@@ -8,9 +8,6 @@ Preview Image 1
 
 Mobile view:<img src="public/mobile.png"/>
 
- preview2.webm 
-Live Demo
-Check out the live demo here.
 
 Sections
 Navbar
