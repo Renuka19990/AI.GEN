@@ -1,14 +1,16 @@
-AI.Gen Landing Page
+## AI.Gen Landing Page
 This repository contains the implementation of the AI.Gen platform's landing page, meticulously translated from a Figma design. The landing page is designed to showcase the features and capabilities of AI.Gen through a structured and visually appealing layout.
 
-Preview
+## Preview
 Desktop view:<img src="public/AI.GEN.landing.png"/>
 
-Preview Image 1
+## Preview Image 1
 
 Mobile view:<img src="public/mobile.png"/>
 
-
+## Demo Video:
+https://drive.google.com/file/d/1T-IykT27IgxNo1kLoOu1X7PdXRaFiNWW/view?usp=sharing
+  
 Sections
 Navbar
 The navigation bar ensures easy access to various sections of the landing page.
@@ -34,7 +36,7 @@ A timeline outlining AI.Gen's development milestones and future plans.
 Footer
 The footer includes additional links and information for users.
 
-Features
+## Features
 Accurate Implementation
 The design from Figma has been precisely converted into a functional web application.
 
@@ -47,21 +49,21 @@ Ensures smooth performance of animations and transitions on various devices and 
 User-Friendly Experience
 Creates an intuitive user experience with interactive elements and straightforward navigation.
 
-Technology Stack
+## Technology Stack
 React: Utilized for building interactive user interfaces, improving code quality, and maintainability.
 Tailwind CSS: Employed for rapid and consistent styling across the application.
 Enhancements
 Scroll Animations & Transitions: Smooth scroll animations and transitions are integrated to enhance the user experience.
 Card Animations: Dynamic card animations are added to make interactive elements more engaging.
 Responsiveness: The application is fully responsive, ensuring an optimal user experience across different devices and screen sizes.
-Getting Started
-To get started with the project, clone the repository and install the necessary dependencies:
 
+## Getting Started
+To get started with the project, clone the repository and install the necessary dependencies:
 git clone https:https://github.com/Renuka19990/AI.GEN
 cd AI.Gen
 npm install
-To run the application locally:
 
+## To run the application locally:
 npm run dev
 Contribution
 Contributions are welcome! Please submit a pull request or open an issue to discuss any changes or improvements.
