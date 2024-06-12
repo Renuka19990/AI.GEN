@@ -1,121 +1,142 @@
+.avatar-section {
+  padding: 10px;
+  margin: 20px;
+}
 
-
-.avatar-section{
-    padding: 10px;
-    margin: 20px;
-  }
-  
 
 .text-active {
-    background: linear-gradient(90deg, #5CC3FA 0%, #9E6EE6 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg, #5CC3FA 0%, #9E6EE6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 
-  }
-  
-  .text-inactive {
-    color: #5f6977; 
-  }
-  
+}
 
-  .roadmap01-h1 {
-    background: linear-gradient(90deg, #ea73f3, #9f6ee6);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+.text-inactive {
+  color: #5f6977;
+}
+
+
+.roadmap01-h1 {
+  background: linear-gradient(90deg, #ea73f3, #9f6ee6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.roadMap-section {
+  padding: 20px;
+  margin-left: 20px;
+}
+
+.roadMap-section-para h1 {
+  background: linear-gradient(90deg, #FACC69 0%, #FA75F8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.roadMap-section-paragraph {
+
+  height: 224px;
+  gap: 8px;
+
+}
+
+.roadMap-section-paragraph li {
+  font-family: Outfit;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.8);
+  ;
+}
+
+.fade-in {
+  animation: fade-in-animation 1s ease-in-out;
+}
+
+@keyframes fade-in-animation {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
   }
 
-  .roadMap-section{
-    padding: 20px;
-    margin-left: 20px;
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-from-left {
+  from {
+    transform: translateX(-100%);
   }
 
-  .roadMap-section-para h1{
-    background: linear-gradient(90deg, #FACC69 0%, #FA75F8 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-
+  to {
+    transform: translateX(0);
   }
-  .roadMap-section-paragraph{
-   
-height:224px;
-gap: 8px;
+}
 
-  }
-  .roadMap-section-paragraph li{
-    font-family: Outfit;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 32px;
-    text-align: left;
-color: rgba(255, 255, 255, 0.8);
-;    
+@keyframes slide-from-right {
+  from {
+    transform: translateX(100%);
   }
 
-  .fade-in {
-    animation: fade-in-animation 1s ease-in-out;
+  to {
+    transform: translateX(0);
   }
-  
-  @keyframes fade-in-animation {
-    from {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+}
+
+.animate-left {
+  animation: slide-from-left 1s ease-out forwards;
+}
+
+.animate-right {
+  animation: slide-from-right 1s ease-out forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
   }
-  @keyframes slide-from-left {
-    from {
-      transform: translateX(-100%);
-    }
-    to {
-      transform: translateX(0);
-    }
+
+  to {
+    opacity: 1;
   }
-  
-  @keyframes slide-from-right {
-    from {
-      transform: translateX(100%);
-    }
-    to {
-      transform: translateX(0);
-    }
+}
+
+@keyframes scale-in {
+  from {
+    transform: scale(0);
   }
-  
-  .animate-left {
-    animation: slide-from-left 1s ease-out forwards;
+
+  to {
+    transform: scale(1);
   }
-  
-  .animate-right {
-    animation: slide-from-right 1s ease-out forwards;
-  }
-  @keyframes fade-in {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes scale-in {
-    from {
-      transform: scale(0);
-    }
-    to {
-      transform: scale(1);
-    }
-  }
-  
-  .animate-fade-in {
-    animation: fade-in 1s ease-out forwards;
-  }
-  
-  .animate-scale-in {
-    animation: scale-in 1s ease-out forwards;
-  }
-  
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scale-in 1s ease-out forwards;
+}
+
+.animated-paragraph li:hover {
+  color: blue;
+}
+
+
+button:hover {
+  background-color: purple;
+  color: blue;
+}
+
+.img1:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}

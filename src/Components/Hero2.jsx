@@ -1,5 +1,5 @@
 import "../CustomStyling/hero2.css";
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef } from "react";
 
 export default function Hero2() {
   const textRef = useRef(null);
@@ -10,15 +10,15 @@ export default function Hero2() {
       const scrollPosition = window.scrollY;
 
       if (scrollPosition > 100) {
-        text.classList.add('text-animate-in');
+        text.classList.add("text-animate-in");
       } else {
-        text.classList.remove('text-animate-in');
+        text.classList.remove("text-animate-in");
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -26,7 +26,12 @@ export default function Hero2() {
     <section className="hero2">
       <div className="hero2-first">
         <div ref={textRef} className="fade-in-scale text-animate-in">
-          <h2><span className="text-yellow">Create, customize, and publish your </span>digital persona to life effortlessly.</h2>
+          <h2>
+            <span className="text-yellow">
+              Create, customize, and publish your{" "}
+            </span>
+            digital persona to life effortlessly.
+          </h2>
         </div>
       </div>
     </section>

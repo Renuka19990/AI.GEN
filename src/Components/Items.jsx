@@ -1,8 +1,8 @@
-import React from 'react';
-import shoesPic from '../../src/assets/ai.shoes.png';
-import girlPic from '../../src/assets/ai.girl.png';
-import keyBoard from '../../src/assets/ai.keyboard.png';
-import detailsPic from '../../src/assets/ai.details.png';
+import React from "react";
+import shoesPic from "../../src/assets/ai.shoes.png";
+import girlPic from "../../src/assets/ai.girl.png";
+import keyBoard from "../../src/assets/ai.keyboard.png";
+import detailsPic from "../../src/assets/ai.details.png";
 import "../CustomStyling/items.css";
 
 export default function Items() {

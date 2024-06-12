@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import '../CustomStyling/navbar.css';
+import { useState } from "react";
+import "../CustomStyling/navbar.css";
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,9 +15,15 @@ export const Navbar = () => {
           AI.GEN
         </div>
         <ul className="hidden md:flex gap-5">
-          <li className="transition-transform transform hover:scale-110">Features</li>
-          <li className="transition-transform transform hover:scale-110">Roadmap</li>
-          <li className="transition-transform transform hover:scale-110">Tokenomics</li>
+          <li className="transition-transform transform hover:scale-110">
+            Features
+          </li>
+          <li className="transition-transform transform hover:scale-110">
+            Roadmap
+          </li>
+          <li className="transition-transform transform hover:scale-110">
+            Tokenomics
+          </li>
         </ul>
       </div>
       <div className="md:hidden">
@@ -39,11 +45,21 @@ export const Navbar = () => {
           </svg>
         </button>
       </div>
-      <div className={`sidebar ${menuOpen ? 'flex' : 'hidden'} md:hidden transition-all duration-500 ease-in-out`}>
+      <div
+        className={`sidebar ${
+          menuOpen ? "flex" : "hidden"
+        } md:hidden transition-all duration-500 ease-in-out`}
+      >
         <ul className="flex flex-col gap-5">
-          <li className="transition-transform transform hover:scale-110 hover:bg-purple-500">Features</li>
-          <li className="transition-transform transform hover:scale-110 hover:bg-purple-500 ">Roadmap</li>
-          <li className="transition-transform transform hover:scale-110 hover:bg-purple-500">Tokenomics</li>
+          <li className="transition-transform transform hover:scale-110 hover:bg-purple-500">
+            Features
+          </li>
+          <li className="transition-transform transform hover:scale-110 hover:bg-purple-500 ">
+            Roadmap
+          </li>
+          <li className="transition-transform transform hover:scale-110 hover:bg-purple-500">
+            Tokenomics
+          </li>
           <li>
             <button className="rounded-md py-3 px-6 border-0 backdrop-opacity-50 bg-slate-900 w-full transition-transform transform hover:scale-110">
               Whitepaper

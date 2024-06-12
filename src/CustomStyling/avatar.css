@@ -1,5 +1,3 @@
-
-
 .avatar-section {
 
   padding: 10px;
@@ -9,30 +7,31 @@
 
 .animated-paragraph {
   transition: transform 0.3s ease, opacity 0.3s ease;
-  opacity: 0.5;  
+  opacity: 0.5;
   transform: scale(0.95);
 }
 
 .text-active {
-  opacity: 1;  
+  opacity: 1;
   transform: scale(1.05);
-  color: #80dc97; 
+  color: #80dc97;
 }
 
 .text-inactive {
-  opacity: 0.5; 
-  transform: scale(0.95); 
+  opacity: 0.5;
+  transform: scale(0.95);
 }
+
 .animated-paragraph {
   transition: transform 0.3s ease-out, color 0.3s ease-out;
   color: #4b4848;
-  transform: translateY(0); 
+  transform: translateY(0);
 }
 
 .text-active {
-  color: #cde478; 
-  transform: scale(1.1); 
-  font-weight: bold; 
+  color: #cde478;
+  transform: scale(1.1);
+  font-weight: bold;
 }
 
 .text-inactive {
@@ -41,7 +40,7 @@
 
 
 .text-inactive {
-  color: #64748b; 
+  color: #64748b;
 }
 
 .avatar-section img {
@@ -51,16 +50,17 @@
 .avatar-section img:hover {
   transform: scale(1.05);
 }
+
 .animated-paragraph {
   transition: color 0.3s ease, text-shadow 0.3s ease;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 
 
 h1 {
   animation: fadeInDown 1s ease-out forwards;
-  opacity: 0; 
+  opacity: 0;
   transform: translateY(-20px);
 }
 
@@ -69,15 +69,18 @@ h1 {
     opacity: 0;
     transform: translateY(-20px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
 @keyframes slide-cross-left {
   from {
     transform: translateX(-100%);
   }
+
   to {
     transform: translateX(0);
   }
@@ -87,6 +90,7 @@ h1 {
   from {
     transform: translateX(100%);
   }
+
   to {
     transform: translateX(0);
   }

@@ -13,10 +13,10 @@
   background-size: cover;
   margin: auto;
   height: 556px;
-  width: 100%; /* Changed to percentage for responsiveness */
+  width: 100%;
 }
 
-.hero2-first > div {
+.hero2-first>div {
   width: 100%;
   height: 100%;
   display: flex;
@@ -24,30 +24,32 @@
   align-items: center;
 }
 
-.hero2-first > div > h2 {
+.hero2-first>div>h2 {
   font-family: Outfit;
-  font-size: 4vw; /* Changed to viewport width for responsiveness */
+  font-size: 4vw;
   font-weight: 500;
   line-height: 1.3;
   text-align: center;
   color: #fff;
-  max-width: 90%; /* Adjusted for responsiveness */
+  max-width: 90%;
 }
 
-.hero2-first > div > h2 > span {
+.hero2-first>div>h2>span {
   background: linear-gradient(90deg, #facc69 0%, #ff91a5 100%);
   background-clip: text;
   color: transparent;
 }
 
-/* Keyframes */
+
 @keyframes continuous-animation {
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.05);
   }
+
   100% {
     transform: scale(1);
   }
@@ -57,12 +59,13 @@
   0% {
     background-position: -200px;
   }
+
   100% {
     background-position: 200px;
   }
 }
 
-/* Animation */
+
 .text-animate-in {
   animation: continuous-animation 3s linear infinite;
 }
@@ -73,23 +76,25 @@
 
 @keyframes hover-animation {
   0% {
-    color: #000; /* Original text color */
+    color: #000;
   }
+
   50% {
-    color: #ff0000; /* Change text color on hover */
+    color: #ff0000;
   }
+
   100% {
-    color: #000; /* Back to original text color */
+    color: #000;
   }
 }
 
-/* Media Queries for responsiveness */
+
 @media screen and (max-width: 768px) {
   .hero2 {
-    padding: 0 20px; /* Adjust padding for smaller screens */
+    padding: 0 20px;
   }
-  
-  .hero2-first > div > h2 {
-    font-size: 5vw; /* Adjust font size for smaller screens */
+
+  .hero2-first>div>h2 {
+    font-size: 5vw;
   }
 }
