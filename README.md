@@ -2,11 +2,11 @@ AI.Gen Landing Page
 This repository contains the implementation of the AI.Gen platform's landing page, meticulously translated from a Figma design. The landing page is designed to showcase the features and capabilities of AI.Gen through a structured and visually appealing layout.
 
 Preview
-Desktop view
+Desktop view:<img src="public/AI.GEN.landing.png"/>
 
 Preview Image 1
 
-Mobile view
+Mobile view:<img src="public/mobile.png"/>
 
  preview2.webm 
 Live Demo
