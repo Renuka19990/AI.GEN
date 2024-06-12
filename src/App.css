@@ -1,12 +1,14 @@
 
 
 .figma-app {
-  font-family: outfit;
+  font-family: "Outfit", sans-serif;
   color: white;
   background: linear-gradient(10deg, rgb(24, 22, 22), rgb(26, 26, 60), black);
   overflow: hidden;
-  
+  font-optical-sizing: auto;
+  font-style: normal;
 }
+
 
 .footer {
   color: white;
