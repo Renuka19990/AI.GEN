@@ -26,7 +26,7 @@ export default function Hero2() {
     <section className="hero2">
       <div className="hero2-first">
         <div ref={textRef} className="fade-in-scale text-animate-in">
-          <h2>Create, customize, and publish your digital persona to life effortlessly.</h2>
+          <h2><span className="text-yellow">Create, customize, and publish your </span>digital persona to life effortlessly.</h2>
         </div>
       </div>
     </section>

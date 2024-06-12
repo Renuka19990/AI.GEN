@@ -13,7 +13,7 @@ export const Phase1 = () => {
     <div className={`min-h-screen flex flex-col items-center justify-center ${isAnimated ? 'fade-in' : ''}`}>
       <h1 className='roadmap01-h1 text-white text-5xl sm:text-4xl md:text-5xl  mb-6'>Roadmap</h1>
       <div className="roadMap-section md:flex justify-center items-center gap-10 relative">
-        <div className="roadMap-section-para">
+        <div className={`roadMap-section-para ${isAnimated ? 'animate-left' : ''}`}>
           <h1 className="roadmap01-h2 text-white text-3xl sm:text-4xl md:text-5xl head-gradient mb-8">PHASE 1</h1> 
           <div className="roadMap-section-paragraph">
             <ul>
@@ -24,7 +24,7 @@ export const Phase1 = () => {
             </ul>
           </div>
         </div>
-        <div className="map-img1 md:w-[60%] md:rounded-r-lg rounded-lg overflow-hidden">
+        <div className={`map-img1 md:w-[60%] md:rounded-r-lg rounded-lg overflow-hidden ${isAnimated ? 'animate-right' : ''}`}>
           <img src={phase1} alt="phase1-ai" className="overflow-hidden" />
         </div>
       </div>

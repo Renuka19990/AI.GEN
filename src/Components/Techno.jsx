@@ -3,24 +3,62 @@ import '../CustomStyling/techno.css'; // Ensure your CSS is included
 
 export default function Techno() {
   return (
-    <div className="py-20">
-      <div className="flex-container">
-        <span className="tag">Avatar</span>
-        <span className="tag">Technology</span>
-        <span className="tag">Design</span>
-        <span className="tag">Artificial Intelligence</span>
-        <span className="tag">AI Chat Bot</span>
-        <span className="tag">Customizable</span>
-        <span className="tag">3D Model</span>
-        <span className="tag">Engineering</span>
-        <span className="tag">People</span>
-        <span className="tag">Create Videos</span>
-        <span className="tag">Analyze</span>
-        <span className="tag">Outfits</span>
-        <span className="tag">Voice Chat</span>
-        <span className="tag">Marketing</span>
-        <span className="tag">Realistic</span>
+    <div className="py-20 overflow-hidden">
+        <div className="flex md:gap-6 gap-3 justify-center items-center animate-left-right">
+          <span className="tag rounded-md md:text-4xl text-sm min-w-max bg-gradient-to-r from-[#284453] to-[#303335] px-4 py-2">
+            Avatar
+          </span>
+          <span className="tag rounded-md md:text-4xl text-sm min-w-max bg-gradient-to-r from-[#5a2459] to-[#303335] px-4 py-2">
+            Technology
+          </span>
+          <span className="tag rounded-md md:text-4xl text-sm min-w-max bg-gradient-to-r from-[#5a2459] to-[#303335] px-4 py-2">
+            Design
+          </span>
+          <span className="tag rounded-md md:text-4xl text-sm min-w-max bg-gradient-to-r from-[#284453] to-[#303335] px-4 py-2">
+            Artificial Intelligence
+          </span>
+          <span className="tag rounded-md md:text-4xl text-sm min-w-max bg-gradient-to-r from-[#5a2459] to-[#303335] px-4 py-2">
+            AI Chat Bot
+          </span>
+          <span className="tag rounded-md md:text-4xl text-sm min-w-max bg-gradient-to-r from-[#284453] to-[#303335] px-4 py-2">
+            Customizable
+          </span>
+          <span className="tag rounded-md md:text-4xl text-sm min-w-max bg-gradient-to-r from-[#5a2459] to-[#303335] px-4 py-2">
+            3D Model
+          </span>
+          <span className="tag rounded-md md:text-4xl text-sm min-w-max bg-gradient-to-r from-[#284453] to-[#303335] px-4 py-2">
+            Engineering
+          </span>
+        </div>
+        <div className="flex md:gap-6 gap-3 justify-center items-center animate-right-left mt-5">
+          <span className="tag rounded-md md:text-4xl text-sm min-w-max bg-gradient-to-r from-[#284453] to-[#303335] px-4 py-2">
+            Artificial Intelligence
+          </span>
+          <span className="tag rounded-md md:text-4xl text-sm min-w-max bg-gradient-to-r from-[#5a2459] to-[#303335] px-4 py-2">
+            People
+          </span>
+          <span className="tag rounded-md md:text-4xl text-sm min-w-max bg-gradient-to-r from-[#5a2459] to-[#303335] px-4 py-2">
+            Create Videos
+          </span>
+          <span className="tag rounded-md md:text-4xl text-sm min-w-max bg-gradient-to-r from-[#284453] to-[#303335] px-4 py-2">
+            Analyze
+          </span>
+          <span className="tag rounded-md md:text-4xl text-sm min-w-max bg-gradient-to-r from-[#5a2459] to-[#303335] px-4 py-2">
+            Outfits
+          </span>
+          <span className="tag rounded-md md:text-4xl text-sm min-w-max bg-gradient-to-r from-[#284453] to-[#303335] px-4 py-2">
+            3d Model
+          </span>
+          <span className="tag rounded-md md:text-4xl text-sm min-w-max bg-gradient-to-r from-[#5a2459] to-[#303335] px-4 py-2">
+            Voice Chat
+          </span>
+          <span className="tag rounded-md md:text-4xl text-sm min-w-max bg-gradient-to-r from-[#284453] to-[#303335] px-4 py-2">
+            Marketing
+          </span>
+          <span className="tag rounded-md md:text-4xl text-sm min-w-max bg-gradient-to-r from-[#284453] to-[#303335] px-4 py-2">
+            Realistic
+          </span>
+        </div>
       </div>
-    </div>
   );
 }

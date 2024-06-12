@@ -30,7 +30,7 @@ export const Header = () => {
   </button>
 </header>
 
-<aside className="hidden md:flex absolute md:relative top-[-30px] right-[-60px] gap-8 mt-32 mr-28">
+<aside className="hidden md:flex absolute md:relative top-[-30px] right-[-60px] gap-12">
   <div className="flex flex-col gap-10">
     <img
       src={elonMusk}
@@ -48,7 +48,7 @@ export const Header = () => {
       className="w-44 h-44 object-cover rounded-xl animate-continuous-animation animate-hover-animation"
     />
   </div>
-  <div className="relative flex flex-col gap-10">
+  <div className="relative bottom-20 flex flex-col gap-10">
     <img
       src={trump}
       alt="trump"

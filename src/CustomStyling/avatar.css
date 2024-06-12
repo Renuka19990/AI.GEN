@@ -53,15 +53,15 @@
 }
 .animated-paragraph {
   transition: color 0.3s ease, text-shadow 0.3s ease;
-  cursor: pointer; /* Indicates that the element is interactive */
+  cursor: pointer; 
 }
 
 
 
 h1 {
   animation: fadeInDown 1s ease-out forwards;
-  opacity: 0; /* Start invisible */
-  transform: translateY(-20px); /* Start slightly above */
+  opacity: 0; 
+  transform: translateY(-20px);
 }
 
 @keyframes fadeInDown {
@@ -73,4 +73,29 @@ h1 {
     opacity: 1;
     transform: translateY(0);
   }
+}
+@keyframes slide-cross-left {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-cross-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-cross-left {
+  animation: slide-cross-left 2s ease-in-out;
+}
+
+.animate-cross-right {
+  animation: slide-cross-right 2s ease-in-out;
 }

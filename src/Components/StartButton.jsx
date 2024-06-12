@@ -1,18 +1,16 @@
+import arrow from '../../src/assets/arrow.png';
+import '../CustomStyling/start.css';
 
-import arrow from '../../src/assets/arrow.png'
-import '../CustomStyling/start.css'
-
-
-
-export const StartButton=()=> {
- 
+export const StartButton = () => {
     return (
         <section className='getstarted'>
-         <div>
-          <button>Get Started <img src={arrow} alt='arrow' className='w-16 arrow'/>
-          </button> 
-          
-     </div>
-        </section>
-    )
-}
+        <div>
+            <button className='glow-border'>
+                Get Started 
+                <img src={arrow} alt='arrow' className='w-16 arrow'/>
+            </button> 
+        </div>
+    </section>
+    
+    );
+};

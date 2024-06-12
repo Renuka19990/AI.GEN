@@ -11,11 +11,13 @@ export const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full flex justify-between items-center p-4 z-10 backdrop-blur-md">
       <div className="flex items-center justify-start gap-5">
-        <div className="text-2xl font-bold tracking-[8px]">AI.GEN</div>
+        <div className="text-2xl font-bold tracking-[8px] transition-transform transform hover:scale-110">
+          AI.GEN
+        </div>
         <ul className="hidden md:flex gap-5">
-          <li>Features</li>
-          <li>Roadmap</li>
-          <li>Tokenomics</li>
+          <li className="transition-transform transform hover:scale-110">Features</li>
+          <li className="transition-transform transform hover:scale-110">Roadmap</li>
+          <li className="transition-transform transform hover:scale-110">Tokenomics</li>
         </ul>
       </div>
       <div className="md:hidden">
@@ -37,28 +39,28 @@ export const Navbar = () => {
           </svg>
         </button>
       </div>
-      <div className={`sidebar ${menuOpen ? 'flex' : 'hidden'} md:hidden`}>
+      <div className={`sidebar ${menuOpen ? 'flex' : 'hidden'} md:hidden transition-all duration-500 ease-in-out`}>
         <ul className="flex flex-col gap-5">
-          <li>Features</li>
-          <li>Roadmap</li>
-          <li>Tokenomics</li>
+          <li className="transition-transform transform hover:scale-110 hover:bg-purple-500">Features</li>
+          <li className="transition-transform transform hover:scale-110 hover:bg-purple-500 ">Roadmap</li>
+          <li className="transition-transform transform hover:scale-110 hover:bg-purple-500">Tokenomics</li>
           <li>
-            <button className="rounded-md py-3 px-6 border-0 backdrop-opacity-50 bg-slate-900 w-full">
+            <button className="rounded-md py-3 px-6 border-0 backdrop-opacity-50 bg-slate-900 w-full transition-transform transform hover:scale-110">
               Whitepaper
             </button>
           </li>
           <li>
-            <button className="bg-gradient-to-r from-indigo-500 to-pink-500 rounded-md py-3 px-6 border-0 w-full">
+            <button className="bg-gradient-to-r from-indigo-500 to-pink-500 rounded-md py-3 px-6 border-0 w-full transition-transform transform hover:scale-110">
               Get Started
             </button>
           </li>
         </ul>
       </div>
       <div className="hidden md:flex gap-3">
-        <button className="rounded-md py-3 px-6 border-0 backdrop-opacity-50 bg-slate-900">
+        <button className="rounded-md py-3 px-6 border-0 backdrop-opacity-50 bg-slate-900 transition-transform transform hover:scale-110 ">
           Whitepaper
         </button>
-        <button className="bg-gradient-to-r from-indigo-500 to-pink-500 rounded-md py-3 px-6 border-0">
+        <button className="bg-gradient-to-r from-indigo-500 to-pink-500 rounded-md py-3 px-6 border-0 transition-transform transform hover:scale-110">
           Get Started
         </button>
       </div>
